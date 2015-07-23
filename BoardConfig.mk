@@ -108,6 +108,9 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.tuna
 
 TARGET_TUNA_AUDIO_HDMI := true
 
+#NO USE DSP
+NO_DSP := true
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
 	$(DEVICE_FOLDER)/sepolicy
