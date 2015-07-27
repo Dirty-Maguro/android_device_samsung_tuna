@@ -239,8 +239,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     dumpdcc
 
+#Don't Build DSPManager
+NO_DSP := true
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/tuna/device-vendor.mk)
+$(call inherit-product, vendor/samsung/maguro/maguro-vendor.mk)
